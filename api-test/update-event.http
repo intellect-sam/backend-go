@@ -1,0 +1,10 @@
+PUT http://localhost:8080/events/2
+Content-Type: application/json
+
+{
+ 
+    "name": "The first family wedding",
+    "description": "Its an introduction that turn to wedding",
+    "location": "Ilesha",
+    "dateTime": "2023-10-01T10:00:00Z"
+}
