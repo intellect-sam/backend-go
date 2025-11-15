@@ -1,10 +1,10 @@
 POST http://localhost:8080/events
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsdWtvb2xha3VubGVzYW11ZWxAZ21haWwuY29tIiwiZXhwIjoxNzYzMDc2MjA3LCJ1c2VySWQiOjB9.nHvmw-pyWMFXag73kNpk4aVe_IaeWUMCnAOE5cYe3qk
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsdWtvb2xha3VubGVzYW11ZWxAZ21haWwuY29tIiwiZXhwIjoxNzYzMjAwMDQzLCJ1c2VySWQiOjF9.1MwtxpSaxBiV5oXiGAGkBRVWbEp8LtEhkSZnO3klfZg
 
 {
-    "name": "Wedding event",
-    "description": "Its an introduction",
+    "name": "Birthday event",
+    "description": "Its an introduction only",
     "location": "Ilesha",
     "dateTime": "2023-10-01T10:00:00Z"
 }

@@ -7,17 +7,17 @@ import (
 )
 
 type Event struct {
-	ID          int
+	ID          int64
 	Name        string    `binding: "required" json:"name"`
 	Description string    `binding: "required" json:"description"`
 	Location    string    `binding: "required" json:"location"`
 	Date        time.Time `binding: "required" json:"date"`
-	UserID      int
+	UserID      int64
 }
 
 var events = []Event{}
 
-func (e Event) Save() error {
+func (e *Event) Save() error {
 	query := `INSERT INTO events (name, description, location, date, user_id)
 	VALUES (?, ?, ?, ?, ?) `
 
@@ -37,7 +37,7 @@ func (e Event) Save() error {
 	if err != nil {
 		return err
 	}
-	e.ID = int(id)
+	e.ID = id
 
 	return err
 }
@@ -110,6 +110,20 @@ func (event Event) Delete() error {
 	defer stmt.Close()
 
 	_, err = stmt.Exec(event.ID)
+
+	return err
+}
+
+func (e Event) Register(userId int64) error {
+	query := "INSERT INTO registrations(event_id, user_id) VALUES(?, ?)"
+	stmt, err := db.DB.Prepare(query)
+
+	if err != nil {
+		return err
+	}
+	defer stmt.Close()
+
+	_, err = stmt.Exec(e.ID, userId)
 
 	return err
 }
