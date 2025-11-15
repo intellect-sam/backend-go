@@ -19,7 +19,7 @@ func Authenticate(context *gin.Context) {
 	userId, err := utils.VerifyToken(token)
 
 	if err != nil {
-		context.JSON(http.StatusUnauthorized, gin.H{"message": "Invalid token"})
+		context.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"message": "Invalid token"})
 		return
 	}
 

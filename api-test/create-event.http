@@ -1,10 +1,10 @@
 POST http://localhost:8080/events
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsdWtvb2xha3VubGVzYW11ZWxAZ21haWwuY29tIiwiZXhwIjoxNzYzMjAwMDQzLCJ1c2VySWQiOjF9.1MwtxpSaxBiV5oXiGAGkBRVWbEp8LtEhkSZnO3klfZg
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbXVlbEBnbWFpbC5jb20iLCJleHAiOjE3NjMyMzExMTAsInVzZXJJZCI6MX0.ldKYv2Qy0odwL_tC6-dGVCPEfJVd7WtLswlgN1mYAbs
 
 {
-    "name": "Birthday event",
-    "description": "Its an introduction only",
+    "name": "Movement Day",
+    "description": "Moving from Ibadan to ilesha",
     "location": "Ilesha",
     "dateTime": "2023-10-01T10:00:00Z"
 }
