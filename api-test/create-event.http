@@ -1,10 +1,10 @@
 POST http://localhost:8080/events
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbXVlbEBnbWFpbC5jb20iLCJleHAiOjE3NjMyMzExMTAsInVzZXJJZCI6MX0.ldKYv2Qy0odwL_tC6-dGVCPEfJVd7WtLswlgN1mYAbs
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsdWtvb2xha3VubGVzYW1AZ21haWwuY29tIiwiZXhwIjoxNzYzMzkwNDg2LCJ1c2VySWQiOjN9.c0XxFCR9D2TcA7TOXVHUN8ayYApKGf16vwgosMJ1WN8
 
 {
-    "name": "Movement Day",
-    "description": "Moving from Ibadan to ilesha",
-    "location": "Ilesha",
+    "name": "Tech Meeting",
+    "description": "This tech meeting will be happening at Ilesha",
+    "location": "Ilesha, Osun State",
     "dateTime": "2023-10-01T10:00:00Z"
 }

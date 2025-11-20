@@ -68,4 +68,5 @@ func createTables() {
 	if err != nil {
 		panic("Could not create the registration table")
 	}
+
 }
