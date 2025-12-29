@@ -10,6 +10,7 @@ func RegisterRoutes(server *gin.Engine) {
 	server.GET("/events/:id", getEvent)
 
 	authenticated := server.Group("/")
+
 	authenticated.Use(middlewares.Authenticate)
 	authenticated.POST("/events", createEvent)
 	authenticated.PUT("/events/:id", updateEvent)
